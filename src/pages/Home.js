@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import "./Home.css";
+import github from "../assets/github.svg";
+import linkedin from "../assets/linkedin.svg";
 
 const Home = () => {
     const currentTime = new Date().toLocaleTimeString(navigator.language, {
@@ -30,7 +33,11 @@ const Home = () => {
                             to="https://github.com/joshhovis"
                             className="home__link"
                         >
-                            Github
+                            <img
+                                className="home__link-image"
+                                src={github}
+                                alt="github logo"
+                            />
                         </Link>
                     </button>
                     <button className="home__button">
@@ -38,7 +45,11 @@ const Home = () => {
                             to="https://www.linkedin.com/in/joshua-hovis/"
                             className="home__link"
                         >
-                            Linkedin
+                            <img
+                                className="home__link-image"
+                                src={linkedin}
+                                alt="linkedin logo"
+                            />
                         </Link>
                     </button>
                 </div>

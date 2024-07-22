@@ -1,1 +1,55 @@
-/*# sourceMappingURL=Home.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: white;
+}
+
+body::before {
+  content: "";
+  height: 100vh;
+  width: 101vw;
+  position: fixed;
+  z-index: -1;
+  background-color: #000;
+  background-image: url(../assets/topography.svg);
+  mask: linear-gradient(-360deg, transparent 40%, white 100%);
+  -webkit-mask: linear-gradient(-360deg, transparent 40%, white 100%);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.home__links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.home__button {
+  background: none;
+  border: 1px solid #383838;
+  box-shadow: none;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.home__link {
+  display: flex;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+section {
+  border: 1px solid #383838;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #171717;
+}/*# sourceMappingURL=Home.css.map */
