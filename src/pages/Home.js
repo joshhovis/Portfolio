@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import "./Home.css";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
+import profilePhoto from "../assets/cartoon-profile.png";
 
 const Home = () => {
     const currentTime = new Date().toLocaleTimeString(navigator.language, {
@@ -16,42 +17,49 @@ const Home = () => {
     return (
         <main className="home">
             <section className="home__intro">
-                <p className="home__welcome">Welcome</p>
-                <p className="home__description">
-                    Hi, I'm <span className="home__name">Joshua Hovis</span>, a
-                    software developer with a focus on the front end user
-                    experience.
-                </p>
-                <p className="home__invite">
-                    Feel free to reach out to me if you would like to discuss
-                    new opportunities or projects!
-                </p>
+                <img
+                    className="home__image"
+                    src={profilePhoto}
+                    alt="cartoon of Joshua"
+                />
+                <div className="home__text-wrapper">
+                    <p className="home__welcome">Welcome</p>
+                    <p className="home__description">
+                        Hi, I'm <span className="home__name">Joshua Hovis</span>{" "}
+                        , a software developer with a focus on the front end
+                        user experience.
+                    </p>
+                    <p className="home__invite">
+                        Feel free to reach out to me if you would like to
+                        discuss new opportunities or projects!
+                    </p>
 
-                <div className="home__links">
-                    <button className="home__button">
-                        <Link
-                            to="https://github.com/joshhovis"
-                            className="home__link"
-                        >
-                            <img
-                                className="home__link-image"
-                                src={github}
-                                alt="github logo"
-                            />
-                        </Link>
-                    </button>
-                    <button className="home__button">
-                        <Link
-                            to="https://www.linkedin.com/in/joshua-hovis/"
-                            className="home__link"
-                        >
-                            <img
-                                className="home__link-image"
-                                src={linkedin}
-                                alt="linkedin logo"
-                            />
-                        </Link>
-                    </button>
+                    <div className="home__links">
+                        <button className="home__button">
+                            <Link
+                                to="https://github.com/joshhovis"
+                                className="home__link"
+                            >
+                                <img
+                                    className="home__link-image"
+                                    src={github}
+                                    alt="github logo"
+                                />
+                            </Link>
+                        </button>
+                        <button className="home__button">
+                            <Link
+                                to="https://www.linkedin.com/in/joshua-hovis/"
+                                className="home__link"
+                            >
+                                <img
+                                    className="home__link-image"
+                                    src={linkedin}
+                                    alt="linkedin logo"
+                                />
+                            </Link>
+                        </button>
+                    </div>
                 </div>
             </section>
 

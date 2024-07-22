@@ -25,6 +25,22 @@ body::before {
   gap: 10px;
   padding: 10px;
 }
+.home__intro {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.home__image {
+  position: absolute;
+  width: 40%;
+  right: -20px;
+  bottom: 0;
+  opacity: 0.5;
+}
+.home__text-wrapper {
+  position: relative;
+  padding: 10px;
+}
 .home__links {
   display: flex;
   flex-direction: row;
