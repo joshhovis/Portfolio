@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./ColorSelect.css";
 
 const ColorSelect = ({ setPrimaryColor }) => {
@@ -22,6 +23,10 @@ const ColorSelect = ({ setPrimaryColor }) => {
             ))}
         </div>
     );
+};
+
+ColorSelect.propTypes = {
+    setPrimaryColor: PropTypes.func.isRequired,
 };
 
 export default ColorSelect;

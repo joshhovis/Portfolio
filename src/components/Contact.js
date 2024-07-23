@@ -1,6 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import arrow from "../assets/arrow.png";
 
 const Contact = () => {
     return (
@@ -29,18 +28,18 @@ const Contact = () => {
                         >
                             <g
                                 fill="currentColor"
-                                fill-rule="nonzero"
+                                fillRule="nonzero"
                                 stroke="none"
-                                stroke-width="1"
-                                stroke-linecap="butt"
-                                stroke-linejoin="miter"
-                                stroke-miterlimit="10"
-                                stroke-dasharray=""
-                                stroke-dashoffset="0"
-                                font-family="none"
-                                font-weight="none"
-                                font-size="none"
-                                text-anchor="none"
+                                strokeWidth="1"
+                                strokeLinecap="butt"
+                                strokeLinejoin="miter"
+                                strokeMiterlimit="10"
+                                strokeDasharray=""
+                                strokeDashoffset="0"
+                                fontFamily="none"
+                                fontWeight="none"
+                                fontSize="none"
+                                textAnchor="none"
                             >
                                 <g transform="scale(16,16)">
                                     <path d="M12.0918,1.07813l-5.84961,5.84961l-2.82812,-2.82617l-1.41406,1.41406v8.48438h8.48438l1.41602,-1.41406l-2.83008,-2.83008l5.84961,-5.84961z"></path>
@@ -62,18 +61,18 @@ const Contact = () => {
                         >
                             <g
                                 fill="currentColor"
-                                fill-rule="nonzero"
+                                fillRule="nonzero"
                                 stroke="none"
-                                stroke-width="1"
-                                stroke-linecap="butt"
-                                stroke-linejoin="miter"
-                                stroke-miterlimit="10"
-                                stroke-dasharray=""
-                                stroke-dashoffset="0"
-                                font-family="none"
-                                font-weight="none"
-                                font-size="none"
-                                text-anchor="none"
+                                strokeWidth="1"
+                                strokeLinecap="butt"
+                                strokeLinejoin="miter"
+                                strokeMiterlimit="10"
+                                strokeDasharray=""
+                                strokeDashoffset="0"
+                                fontFamily="none"
+                                fontWeight="none"
+                                fontSize="none"
+                                textAnchor="none"
                             >
                                 <g transform="scale(16,16)">
                                     <path d="M12.0918,1.07813l-5.84961,5.84961l-2.82812,-2.82617l-1.41406,1.41406v8.48438h8.48438l1.41602,-1.41406l-2.83008,-2.83008l5.84961,-5.84961z"></path>
