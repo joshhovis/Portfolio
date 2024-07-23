@@ -266,7 +266,7 @@ section:hover, section:focus {
   }
   .home__intro-image {
     width: 50%;
-    top: 100px;
+    top: 120px;
     right: -20px;
     opacity: 1;
   }
@@ -315,7 +315,11 @@ section:hover, section:focus {
 @media only screen and (min-width: 1440px) {
   .home {
     width: 80%;
-    margin: 0 auto;
+    margin: auto auto;
+    padding: 50px 20px;
+  }
+  .home__intro-image {
+    top: 80px;
   }
 }
 @media only screen and (min-width: 1880px) {

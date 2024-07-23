@@ -357,7 +357,7 @@ section {
 
             &-image {
                 width: 50%;
-                top: 100px;
+                top: 120px;
                 right: -20px;
                 opacity: 1;
             }
@@ -419,7 +419,14 @@ section {
 @media only screen and (min-width: 1440px) {
     .home {
         width: 80%;
-        margin: 0 auto;
+        margin: auto auto;
+        padding: 50px 20px;
+
+        &__intro {
+            &-image {
+                top: 80px;
+            }
+        }
     }
 }
 
