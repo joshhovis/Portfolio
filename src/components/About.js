@@ -6,7 +6,7 @@ const About = () => {
         <div className="about">
             <h1 className="about__title">About me</h1>
             <p className="about__description">
-                Hi, I'm Joshua, a front-end software developer from the United
+                Hi, I'm Joshua, a full-stack software developer from the United
                 States.
             </p>
             <p className="about__tools-title">

@@ -63,7 +63,7 @@ section {
             padding: 10px;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
 
             & p {
                 margin: 0;
@@ -72,7 +72,7 @@ section {
 
         &-welcome {
             color: $darkslate-300;
-            font-size: 0.75rem;
+            font-size: 0.825rem;
         }
 
         &-name {

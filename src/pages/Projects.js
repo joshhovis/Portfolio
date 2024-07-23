@@ -38,7 +38,10 @@ const Projects = () => (
                     <h4 className="projects__list-tools-item">HTML/CSS/JS</h4>
                 </div>
                 <div className="projects__list-link-row">
-                    <Link to="/" className="projects__list-link">
+                    <Link
+                        to="https://www.littlelightsdentistry.org/"
+                        className="projects__list-link"
+                    >
                         Live Site
                     </Link>
                 </div>
@@ -66,10 +69,16 @@ const Projects = () => (
                     </h4>
                 </div>
                 <div className="projects__list-link-row">
-                    <Link to="/" className="projects__list-link">
+                    <Link
+                        to="https://joshhovis.github.io/Time-Tracking-Dashboard/"
+                        className="projects__list-link"
+                    >
                         Live Site
                     </Link>
-                    <Link to="/" className="projects__list-link">
+                    <Link
+                        to="https://github.com/joshhovis/Time-Tracking-Dashboard"
+                        className="projects__list-link"
+                    >
                         Source Code
                     </Link>
                 </div>
@@ -95,10 +104,16 @@ const Projects = () => (
                     </h4>
                 </div>
                 <div className="projects__list-link-row">
-                    <Link to="/" className="projects__list-link">
+                    <Link
+                        to="https://joshhovis.github.io/Newsletter-Form/"
+                        className="projects__list-link"
+                    >
                         Live Site
                     </Link>
-                    <Link to="/" className="projects__list-link">
+                    <Link
+                        to="https://github.com/joshhovis/Newsletter-Form"
+                        className="projects__list-link"
+                    >
                         Source Code
                     </Link>
                 </div>
@@ -119,10 +134,16 @@ const Projects = () => (
                     <h4 className="projects__list-tools-item">JavaScript</h4>
                 </div>
                 <div className="projects__list-link-row">
-                    <Link to="/" className="projects__list-link">
+                    <Link
+                        to="https://joshhovis.github.io/BMI-Calculator/"
+                        className="projects__list-link"
+                    >
                         Live Site
                     </Link>
-                    <Link to="/" className="projects__list-link">
+                    <Link
+                        to="https://github.com/joshhovis/BMI-Calculator"
+                        className="projects__list-link"
+                    >
                         Source Code
                     </Link>
                 </div>

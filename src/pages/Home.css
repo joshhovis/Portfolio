@@ -49,14 +49,14 @@ section {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 .home__text-wrapper p {
   margin: 0;
 }
 .home__text-welcome {
   color: #6b6b6b;
-  font-size: 0.75rem;
+  font-size: 0.825rem;
 }
 .home__text-name {
   font-weight: bold;
