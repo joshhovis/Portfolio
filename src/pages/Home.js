@@ -11,6 +11,8 @@ import linkedin from "../assets/linkedin.svg";
 import profilePhoto from "../assets/cartoon-profile.png";
 import arrow from "../assets/arrow.png";
 
+import { usePrimaryColor } from "../PrimaryColorContext";
+
 const Home = () => {
     const currentTime = new Date().toLocaleTimeString(navigator.language, {
         hour: "2-digit",
@@ -18,7 +20,7 @@ const Home = () => {
         hour12: true,
     });
 
-    const [primaryColor, setPrimaryColor] = useState("#22C55E");
+    const { primaryColor, setPrimaryColor } = usePrimaryColor();
 
     const handleResize = () => {
         const colorFooter = document.getElementById("color-footer");
