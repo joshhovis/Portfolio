@@ -5,6 +5,7 @@ import lld from "../assets/LLD.webp";
 import timeDashboard from "../assets/time-dashboard.png";
 import bmi from "../assets/bmi.png";
 import newsForm from "../assets/news-form.png";
+import portfolio from "../assets/screenshot-portfolio.png";
 
 import { usePrimaryColor } from "../PrimaryColorContext";
 
@@ -53,6 +54,49 @@ const Projects = () => {
                         >
                             <button className="projects__list-button">
                                 Live Site
+                            </button>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="projects__list-item">
+                    <img
+                        className="projects__list-img"
+                        src={portfolio}
+                        alt="Joshua hovis portfolio home page"
+                    />
+                    <h3 className="projects__list-title">Portfolio</h3>
+                    <p className="projects__list-description">
+                        A personal portfolio website showcasing my skills,
+                        projects, and experience as a software developer,
+                        designed to provide a comprehensive overview of my work
+                        and capabilities. The site leverages React features such
+                        as Context API for state management and custom hooks for
+                        encapsulating reusable logic, ensuring a responsive and
+                        interactive user experience.
+                    </p>
+                    <div className="projects__list-tools">
+                        <h4 className="projects__list-tools-item">React</h4>
+                        <h4 className="projects__list-tools-item">HTML/SCSS</h4>
+                        <h4 className="projects__list-tools-item">
+                            JavaScript
+                        </h4>
+                    </div>
+                    <div className="projects__list-link-row">
+                        <Link
+                            to="https://joshhovis.github.io/BMI-Calculator/"
+                            className="projects__list-link"
+                        >
+                            <button className="projects__list-button">
+                                Live Site
+                            </button>
+                        </Link>
+                        <Link
+                            to="https://github.com/joshhovis/BMI-Calculator"
+                            className="projects__list-link"
+                        >
+                            <button className="projects__list-button">
+                                Source Code
                             </button>
                         </Link>
                     </div>
