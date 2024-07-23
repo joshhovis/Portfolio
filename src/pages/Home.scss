@@ -30,6 +30,13 @@ body::before {
     -webkit-mask: linear-gradient(-360deg, transparent 40%, white 100%);
 }
 
+section {
+    border: 1px solid $darkslate-400;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $darkslate-500;
+}
+
 .home {
     display: flex;
     flex-direction: column;
@@ -46,13 +53,31 @@ body::before {
         position: absolute;
         width: 40%;
         right: -20px;
-        bottom: 0;
+        top: -5px;
         opacity: 0.5;
     }
 
-    &__text-wrapper {
-        position: relative;
-        padding: 10px;
+    &__text {
+        &-wrapper {
+            position: relative;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            & p {
+                margin: 0;
+            }
+        }
+
+        &-welcome {
+            color: $darkslate-300;
+            font-size: 0.75rem;
+        }
+
+        &-name {
+            font-weight: bold;
+        }
     }
 
     &__links {
@@ -69,6 +94,7 @@ body::before {
         display: flex;
         justify-content: center;
         padding: 0;
+        border-radius: 10px;
     }
 
     &__link {
@@ -78,11 +104,104 @@ body::before {
         height: 100%;
         justify-content: center;
     }
-}
 
-section {
-    border: 1px solid $darkslate-400;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: $darkslate-500;
+    &__timezone {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &-title {
+            margin: 0;
+        }
+
+        &-info {
+            display: flex;
+            gap: 8px;
+            font-size: 1.7rem;
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
+
+    &__current {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        & p,
+        & h4 {
+            margin: 0;
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+
+            &-question {
+                font-size: 0.75rem;
+                color: $darkslate-300;
+            }
+        }
+
+        &-icon {
+            background-color: rgb(34 197 94);
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        &-answer {
+            font-size: 0.85rem;
+        }
+    }
+
+    &__projects {
+        display: flex;
+        justify-content: space-between;
+
+        &-link {
+            color: white;
+            text-decoration: none;
+
+            &-header {
+                margin: 0;
+                font-size: 1.25rem;
+            }
+        }
+
+        &-icon {
+            rotate: 180deg;
+            width: 12px;
+            height: 12px;
+            margin: auto 0;
+        }
+    }
+
+    &__footer {
+        font-size: 0.875rem;
+
+        & p {
+            margin: 0;
+        }
+
+        & a {
+            text-decoration: none;
+        }
+
+        &-react {
+            color: #087ea4;
+        }
+
+        &-scss {
+            color: #cf649a;
+        }
+
+        &-author {
+            color: white;
+            font-weight: bold;
+        }
+    }
 }

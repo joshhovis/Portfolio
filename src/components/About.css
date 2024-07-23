@@ -1,1 +1,16 @@
-/*# sourceMappingURL=About.css.map */
+.about {
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about p {
+  margin: 0;
+}
+.about__title {
+  margin: 0;
+}
+.about__tools {
+  padding: 0 20px;
+  margin: 0;
+}/*# sourceMappingURL=About.css.map */

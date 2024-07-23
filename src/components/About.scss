@@ -1,0 +1,19 @@
+.about {
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & p {
+        margin: 0;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__tools {
+        padding: 0 20px;
+        margin: 0;
+    }
+}

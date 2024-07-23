@@ -1,1 +1,34 @@
-/*# sourceMappingURL=Contact.css.map */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact__title {
+  margin: 0;
+}
+.contact p {
+  margin: 0;
+}
+.contact h4 {
+  margin: 0;
+  font-weight: normal;
+}
+.contact__section {
+  font-style: italic;
+}
+.contact__section-email {
+  padding-left: 3px;
+}
+.contact__section-title {
+  color: #6b6b6b;
+}
+.contact__socials {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #6b6b6b;
+}
+.contact__socials-item a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=Contact.css.map */

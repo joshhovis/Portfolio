@@ -6,6 +6,7 @@ import "./Home.css";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
 import profilePhoto from "../assets/cartoon-profile.png";
+import arrow from "../assets/arrow.png";
 
 const Home = () => {
     const currentTime = new Date().toLocaleTimeString(navigator.language, {
@@ -23,13 +24,14 @@ const Home = () => {
                     alt="cartoon of Joshua"
                 />
                 <div className="home__text-wrapper">
-                    <p className="home__welcome">Welcome</p>
-                    <p className="home__description">
-                        Hi, I'm <span className="home__name">Joshua Hovis</span>{" "}
-                        , a software developer with a focus on the front end
-                        user experience.
+                    <p className="home__text-welcome">Welcome</p>
+                    <p className="home__text-description">
+                        Hi, I'm{" "}
+                        <span className="home__text-name">Joshua Hovis</span> ,
+                        a software developer with a focus on the front end user
+                        experience.
                     </p>
-                    <p className="home__invite">
+                    <p className="home__text-invite">
                         Feel free to reach out to me if you would like to
                         discuss new opportunities or projects!
                     </p>
@@ -74,40 +76,62 @@ const Home = () => {
             <section className="home__timezone">
                 <h3 className="home__timezone-title">Time zone</h3>
                 <div className="home__timezone-info">
-                    <p className="home__timezone-time">{currentTime} EST</p>
+                    <p className="home__timezone-time">{currentTime} EST,</p>
                     <p className="home__timezone-location">United States</p>
                 </div>
             </section>
 
             <section className="home__current">
-                <span className="home__current-icon"></span>
-                <h4 className="home__current-title">Current</h4>
-                <p className="home__current-question">
-                    What am I currently working on?
-                </p>
+                <div className="home__current-header">
+                    <div>
+                        <h4 className="home__current-header-title">Current</h4>
+                        <p className="home__current-header-question">
+                            What am I currently working on?
+                        </p>
+                    </div>
+                    <div className="home__current-icon"></div>
+                </div>
                 <p className="home__current-answer">
                     Enrolled in school to obtain a BS in Software Engineering -
                     35% finished
                 </p>
                 <p className="home__current-answer">
                     Volunteering for different organizations to help them
-                    achieve their tech needs
+                    achieve their tech needs.
                 </p>
             </section>
 
-            <section className="home__projects-link">
-                <Link to="/projects" className="home__projects-link-text">
-                    Projects
+            <section className="home__projects">
+                <Link to="/projects" className="home__projects-link">
+                    <h2 className="home__projects-link-header">Projects</h2>
                 </Link>
+                <img
+                    className="home__projects-icon"
+                    src={arrow}
+                    alt="arrow icon"
+                />
             </section>
 
             <section className="home__footer">
                 <p className="home__footer-text">
                     2024 - Crafted using{" "}
-                    <a href="/" className="home__footer-link">
+                    <a href="https://react.dev/" className="home__footer-react">
                         React
                     </a>{" "}
-                    by <span className="home__footer-author">Joshua Hovis</span>
+                    and{" "}
+                    <a
+                        className="home__footer-scss"
+                        href="https://sass-lang.com/documentation/"
+                    >
+                        SCSS
+                    </a>{" "}
+                    by{" "}
+                    <a
+                        href="https://github.com/joshhovis"
+                        className="home__footer-author"
+                    >
+                        Joshua Hovis
+                    </a>
                 </p>
             </section>
         </main>

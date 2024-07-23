@@ -1,4 +1,5 @@
 import React from "react";
+import "./About.css";
 
 const About = () => {
     return (
@@ -11,12 +12,12 @@ const About = () => {
             <p className="about__tools-title">
                 My primary tools of choice include:
             </p>
-            <ul className="about__tools-list">
-                <li className="about__tool-item">JavaScript</li>
-                <li className="about__tool-item">React</li>
-                <li className="about__tool-item">Angular</li>
-                <li className="about__tool-item">Astro</li>
-                <li className="about__tool-item">Nodejs</li>
+            <ul className="about__tools">
+                <li className="about__tools-item">JavaScript</li>
+                <li className="about__tools-item">React</li>
+                <li className="about__tools-item">Angular</li>
+                <li className="about__tools-item">Astro</li>
+                <li className="about__tools-item">Nodejs</li>
             </ul>
             <p className="about__passion">
                 Beyond coding, I have a passion for building things. Whether

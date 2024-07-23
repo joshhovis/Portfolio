@@ -1,17 +1,28 @@
 import React from "react";
+import "./Contact.css";
 
 const Contact = () => {
     return (
         <div className="contact">
             <h3 className="contact__title">Let's work together!</h3>
 
-            <p className="contact__section-title">Contact Details</p>
-            <p className="contact__email">joshuahovis3@gmail.com</p>
+            <div className="contact__section">
+                <h4 className="contact__section-title">Contact Details</h4>
+                <p className="contact__section-email">joshuahovis3@gmail.com</p>
+                <p className="contact__section-location">United States</p>
+            </div>
 
-            <p className="contact__section-title">Socials</p>
-            <ul className="contact__socials-list">
-                <li className="contact__social-item">Linkedin</li>
-                <li className="contact__social-item">Github</li>
+            {/* <h4 className="contact__section-title">Socials</h4> */}
+            <ul className="contact__socials">
+                Socials
+                <li className="contact__socials-item">
+                    <a href="https://github.com/joshhovis">Github</a>
+                </li>
+                <li className="contact__socials-item">
+                    <a href="https://www.linkedin.com/in/joshua-hovis/">
+                        Linkedin
+                    </a>
+                </li>
             </ul>
         </div>
     );
