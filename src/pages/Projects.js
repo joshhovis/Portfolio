@@ -84,7 +84,7 @@ const Projects = () => {
                     </div>
                     <div className="projects__list-link-row">
                         <Link
-                            to="https://joshhovis.github.io/BMI-Calculator/"
+                            to="https://joshhovis.github.io/Portfolio/"
                             className="projects__list-link"
                         >
                             <button className="projects__list-button">
@@ -92,7 +92,7 @@ const Projects = () => {
                             </button>
                         </Link>
                         <Link
-                            to="https://github.com/joshhovis/BMI-Calculator"
+                            to="https://github.com/joshhovis/Portfolio"
                             className="projects__list-link"
                         >
                             <button className="projects__list-button">
