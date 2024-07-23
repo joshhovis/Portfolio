@@ -19,43 +19,45 @@ const Home = () => {
         <main className="home">
             <section className="home__intro">
                 <img
-                    className="home__image"
+                    className="home__intro-image"
                     src={profilePhoto}
                     alt="cartoon of Joshua"
                 />
-                <div className="home__text-wrapper">
-                    <p className="home__text-welcome">Welcome</p>
-                    <p className="home__text-description">
+                <div className="home__intro-text">
+                    <p className="home__intro-text-welcome">Welcome</p>
+                    <p className="home__intro-text-description">
                         Hi, I'm{" "}
-                        <span className="home__text-name">Joshua Hovis</span> ,
-                        a software developer with a focus on the front end user
-                        experience.
+                        <span className="home__intro-text-name">
+                            Joshua Hovis
+                        </span>{" "}
+                        , a software developer with a focus on the front end
+                        user experience.
                     </p>
-                    <p className="home__text-invite">
+                    <p className="home__intro-text-invite">
                         Feel free to reach out to me if you would like to
                         discuss new opportunities or projects!
                     </p>
 
-                    <div className="home__links">
-                        <button className="home__button">
+                    <div className="home__intro-links">
+                        <button className="home__intro-button">
                             <Link
                                 to="https://github.com/joshhovis"
-                                className="home__link"
+                                className="home__intro-link"
                             >
                                 <img
-                                    className="home__link-image"
+                                    className="home__intro-link-image"
                                     src={github}
                                     alt="github logo"
                                 />
                             </Link>
                         </button>
-                        <button className="home__button">
+                        <button className="home__intro-button">
                             <Link
                                 to="https://www.linkedin.com/in/joshua-hovis/"
-                                className="home__link"
+                                className="home__intro-link"
                             >
                                 <img
-                                    className="home__link-image"
+                                    className="home__intro-link-image"
                                     src={linkedin}
                                     alt="linkedin logo"
                                 />
@@ -65,11 +67,11 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="home__section">
+            <section className="home__about">
                 <About />
             </section>
 
-            <section className="home__section">
+            <section className="home__contact">
                 <Contact />
             </section>
 

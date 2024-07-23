@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import arrow from "../assets/arrow.png";
 
 const Contact = () => {
     return (
@@ -16,11 +17,23 @@ const Contact = () => {
             <ul className="contact__socials">
                 Socials
                 <li className="contact__socials-item">
-                    <a href="https://github.com/joshhovis">Github</a>
+                    <a href="https://github.com/joshhovis">
+                        Github
+                        <img
+                            className="contact__socials-icon"
+                            src={arrow}
+                            alt="arrow icon"
+                        />
+                    </a>
                 </li>
                 <li className="contact__socials-item">
                     <a href="https://www.linkedin.com/in/joshua-hovis/">
                         Linkedin
+                        <img
+                            className="contact__socials-icon"
+                            src={arrow}
+                            alt="arrow icon"
+                        />
                     </a>
                 </li>
             </ul>

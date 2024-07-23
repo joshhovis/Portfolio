@@ -47,18 +47,15 @@ section {
         position: relative;
         padding: 0;
         overflow: hidden;
-    }
 
-    &__image {
-        position: absolute;
-        width: 40%;
-        right: -20px;
-        top: -5px;
-        opacity: 0.5;
-    }
-
-    &__text {
-        &-wrapper {
+        &-image {
+            position: absolute;
+            width: 40%;
+            right: -20px;
+            top: -5px;
+            opacity: 0.5;
+        }
+        &-text {
             position: relative;
             padding: 10px;
             display: flex;
@@ -68,41 +65,40 @@ section {
             & p {
                 margin: 0;
             }
+
+            &-welcome {
+                color: $darkslate-300;
+                font-size: 0.825rem;
+            }
+
+            &-name {
+                font-weight: bold;
+            }
+        }
+        &-links {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
         }
 
-        &-welcome {
-            color: $darkslate-300;
-            font-size: 0.825rem;
+        &-button {
+            background: none;
+            border: 1px solid $darkslate-400;
+            box-shadow: none;
+            width: 4rem;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            border-radius: 10px;
         }
 
-        &-name {
-            font-weight: bold;
+        &-link {
+            display: flex;
+            padding: 8px;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
         }
-    }
-
-    &__links {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    &__button {
-        background: none;
-        border: 1px solid $darkslate-400;
-        box-shadow: none;
-        width: 4rem;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        border-radius: 10px;
-    }
-
-    &__link {
-        display: flex;
-        padding: 8px;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
     }
 
     &__timezone {
@@ -202,6 +198,77 @@ section {
         &-author {
             color: white;
             font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
+        grid-template-areas:
+            "intro intro intro"
+            "about about contact"
+            "about about timezone"
+            "projects current footer";
+
+        &__intro {
+            grid-area: intro;
+
+            &-image {
+                width: 25%;
+                opacity: 0.85;
+                right: -10px;
+            }
+
+            &-text {
+                width: 75%;
+                height: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        &__about {
+            grid-area: about;
+        }
+
+        &__contact {
+            grid-area: contact;
+        }
+
+        &__timezone {
+            grid-area: timezone;
+            gap: 30px;
+
+            & p {
+                font-size: 1.5rem;
+            }
+
+            &-info {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__projects {
+            grid-area: projects;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__current {
+            grid-area: current;
+        }
+
+        &__footer {
+            grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }

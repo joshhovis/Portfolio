@@ -37,36 +37,36 @@ section {
   padding: 0;
   overflow: hidden;
 }
-.home__image {
+.home__intro-image {
   position: absolute;
   width: 40%;
   right: -20px;
   top: -5px;
   opacity: 0.5;
 }
-.home__text-wrapper {
+.home__intro-text {
   position: relative;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.home__text-wrapper p {
+.home__intro-text p {
   margin: 0;
 }
-.home__text-welcome {
+.home__intro-text-welcome {
   color: #6b6b6b;
   font-size: 0.825rem;
 }
-.home__text-name {
+.home__intro-text-name {
   font-weight: bold;
 }
-.home__links {
+.home__intro-links {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.home__button {
+.home__intro-button {
   background: none;
   border: 1px solid #383838;
   box-shadow: none;
@@ -76,7 +76,7 @@ section {
   padding: 0;
   border-radius: 10px;
 }
-.home__link {
+.home__intro-link {
   display: flex;
   padding: 8px;
   width: 100%;
@@ -160,4 +160,60 @@ section {
 .home__footer-author {
   color: white;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    grid-template-areas: "intro intro intro" "about about contact" "about about timezone" "projects current footer";
+  }
+  .home__intro {
+    grid-area: intro;
+  }
+  .home__intro-image {
+    width: 25%;
+    opacity: 0.85;
+    right: -10px;
+  }
+  .home__intro-text {
+    width: 75%;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .home__about {
+    grid-area: about;
+  }
+  .home__contact {
+    grid-area: contact;
+  }
+  .home__timezone {
+    grid-area: timezone;
+    gap: 30px;
+  }
+  .home__timezone p {
+    font-size: 1.5rem;
+  }
+  .home__timezone-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .home__projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home__current {
+    grid-area: current;
+  }
+  .home__footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Home.css.map */
