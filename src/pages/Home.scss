@@ -9,6 +9,10 @@ $darkslate-700: #111111;
 $darkslate-800: #0e0e0e;
 $darkslate-900: #0b0b0b;
 
+:root {
+    --primary-color: #22c55e;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -35,6 +39,12 @@ section {
     padding: 20px;
     border-radius: 10px;
     background-color: $darkslate-500;
+
+    &:hover,
+    &:focus {
+        border-color: var(--primary-color);
+        // box-shadow: 2px 2px 0 var(--primary-color);
+    }
 }
 
 .home {
@@ -80,30 +90,6 @@ section {
             &-name {
                 font-weight: bold;
             }
-        }
-        &-links {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-        }
-
-        &-button {
-            background: none;
-            border: 1px solid $darkslate-400;
-            box-shadow: none;
-            width: 4rem;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            border-radius: 10px;
-        }
-
-        &-link {
-            display: flex;
-            padding: 8px;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
         }
     }
 
@@ -153,6 +139,34 @@ section {
             width: 12px;
             height: 12px;
             border-radius: 50%;
+            box-shadow: 0 0 0 rgba(34, 197, 94, 0.4);
+            animation: pulse 1s infinite;
+
+            @-webkit-keyframes pulse {
+                0% {
+                    -webkit-box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.75);
+                }
+                70% {
+                    -webkit-box-shadow: 0 0 0 5px rgba(74, 222, 128, 0);
+                }
+                100% {
+                    -webkit-box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+                }
+            }
+            @keyframes pulse {
+                0% {
+                    -moz-box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.75);
+                    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.75);
+                }
+                70% {
+                    -moz-box-shadow: 0 0 0 5px rgba(74, 222, 128, 0);
+                    box-shadow: 0 0 0 5px rgba(74, 222, 128, 0);
+                }
+                100% {
+                    -moz-box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+                    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+                }
+            }
         }
 
         &-answer {
@@ -167,6 +181,13 @@ section {
             width: 100%;
             display: flex;
             justify-content: space-between;
+            transition: 0.1s ease-out;
+
+            &:hover,
+            &:focus {
+                color: var(--primary-color);
+                transition: 0.1s ease-in;
+            }
 
             &-header {
                 margin: 0;
@@ -179,7 +200,20 @@ section {
             width: 12px;
             height: 12px;
             margin: auto 0;
+            transition: 0.1s ease-out;
+
+            &:hover,
+            &:focus {
+                fill: var(--primary-color);
+                transition: 0.1s ease-in;
+            }
         }
+    }
+
+    &__color-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     &__footer {
@@ -219,7 +253,7 @@ section {
             "intro intro intro"
             "about about contact"
             "about about timezone"
-            "projects current footer";
+            "projects current colorFooter";
 
         &__intro {
             grid-area: intro;
@@ -271,6 +305,23 @@ section {
             grid-area: current;
         }
 
+        &__color-footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "color color color"
+                "footer footer footer";
+            grid-area: colorFooter;
+        }
+
+        &__color {
+            grid-area: color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         &__footer {
             grid-area: footer;
             display: flex;
@@ -289,7 +340,7 @@ section {
             "intro intro about about"
             "intro intro about about"
             "contact timezone timezone current"
-            "projects projects footer footer";
+            "projects color footer footer";
 
         &__intro {
             grid-area: intro;
@@ -298,6 +349,7 @@ section {
                 width: 50%;
                 top: 100px;
                 right: -20px;
+                opacity: 1;
             }
 
             &-text {
@@ -340,12 +392,29 @@ section {
             grid-area: current;
         }
 
-        &__footer {
-            grid-area: footer;
-        }
-
         &__projects {
             grid-area: projects;
         }
+
+        &__color {
+            grid-area: color;
+        }
+
+        &__footer {
+            grid-area: footer;
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .home {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1880px) {
+    .home {
+        width: 60%;
     }
 }

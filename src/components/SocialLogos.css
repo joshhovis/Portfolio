@@ -1,0 +1,28 @@
+.social__logos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.social__logos-button {
+  background: none;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  box-shadow: 2px 2px 0 var(--primary-color);
+}
+.social__logos-link {
+  display: flex;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  color: white;
+  transition: 0.1s ease-out;
+}
+.social__logos-link:hover, .social__logos-link:focus {
+  color: var(--primary-color);
+  transition: 0.1s ease-in;
+}/*# sourceMappingURL=SocialLogos.css.map */
