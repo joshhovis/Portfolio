@@ -104,12 +104,12 @@ const Home = () => {
             <section className="home__projects">
                 <Link to="/projects" className="home__projects-link">
                     <h2 className="home__projects-link-header">Projects</h2>
+                    <img
+                        className="home__projects-icon"
+                        src={arrow}
+                        alt="arrow icon"
+                    />
                 </Link>
-                <img
-                    className="home__projects-icon"
-                    src={arrow}
-                    alt="arrow icon"
-                />
             </section>
 
             <section className="home__footer">

@@ -125,13 +125,12 @@ section {
 .home__current-answer {
   font-size: 0.85rem;
 }
-.home__projects {
-  display: flex;
-  justify-content: space-between;
-}
 .home__projects-link {
   color: white;
   text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .home__projects-link-header {
   margin: 0;
