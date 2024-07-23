@@ -24,19 +24,21 @@ const Home = () => {
                     alt="cartoon of Joshua"
                 />
                 <div className="home__intro-text">
-                    <p className="home__intro-text-welcome">Welcome</p>
-                    <p className="home__intro-text-description">
-                        Hi, I'm{" "}
-                        <span className="home__intro-text-name">
-                            Joshua Hovis
-                        </span>{" "}
-                        , a software developer with a focus on the front end
-                        user experience.
-                    </p>
-                    <p className="home__intro-text-invite">
-                        Feel free to reach out to me if you would like to
-                        discuss new opportunities or projects!
-                    </p>
+                    <div className="home__intro-text-wrapper">
+                        <p className="home__intro-text-welcome">Welcome</p>
+                        <p className="home__intro-text-description">
+                            Hi, I'm{" "}
+                            <span className="home__intro-text-name">
+                                Joshua Hovis
+                            </span>{" "}
+                            , a software developer with a focus on the front end
+                            user experience.
+                        </p>
+                        <p className="home__intro-text-invite">
+                            Feel free to reach out to me if you would like to
+                            discuss new opportunities or projects!
+                        </p>
+                    </div>
 
                     <div className="home__intro-links">
                         <button className="home__intro-button">

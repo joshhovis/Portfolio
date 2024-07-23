@@ -74,4 +74,14 @@
   .projects__list {
     gap: 20px;
   }
+}
+@media only screen and (min-width: 1024px) {
+  .projects {
+    padding: 25px 80px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects__list {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=Projects.css.map */

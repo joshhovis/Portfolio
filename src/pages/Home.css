@@ -34,25 +34,29 @@ section {
 }
 .home__intro {
   position: relative;
-  padding: 0;
+  padding: 20px;
   overflow: hidden;
 }
 .home__intro-image {
   position: absolute;
   width: 40%;
   right: -20px;
-  top: -5px;
+  bottom: 0;
   opacity: 0.5;
 }
 .home__intro-text {
   position: relative;
-  padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .home__intro-text p {
   margin: 0;
+}
+.home__intro-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .home__intro-text-welcome {
   color: #6b6b6b;
@@ -178,6 +182,7 @@ section {
     width: 25%;
     opacity: 0.85;
     right: -10px;
+    top: 0;
   }
   .home__intro-text {
     width: 75%;
@@ -215,5 +220,59 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 10%;
+    grid-template-areas: "intro intro about about" "intro intro about about" "contact timezone timezone current" "projects projects footer footer";
+  }
+  .home__intro {
+    grid-area: intro;
+  }
+  .home__intro-image {
+    width: 50%;
+    top: 100px;
+    right: -20px;
+  }
+  .home__intro-text {
+    width: 70%;
+    justify-content: space-between;
+  }
+  .home__intro-text-wrapper {
+    gap: 15px;
+  }
+  .home__about {
+    grid-area: about;
+  }
+  .home__contact {
+    grid-area: contact;
+  }
+  .home__timezone {
+    grid-area: timezone;
+    gap: 50px;
+  }
+  .home__timezone-info {
+    flex-direction: row;
+  }
+  .home__timezone-info p {
+    font-size: 2.2rem;
+  }
+  .home__timezone-time {
+    font-size: 3rem;
+  }
+  .home__timezone-loaction {
+    font-size: 3rem;
+  }
+  .home__current {
+    grid-area: current;
+  }
+  .home__footer {
+    grid-area: footer;
+  }
+  .home__projects {
+    grid-area: projects;
   }
 }/*# sourceMappingURL=Home.css.map */

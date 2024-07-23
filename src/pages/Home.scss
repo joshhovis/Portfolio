@@ -45,25 +45,31 @@ section {
 
     &__intro {
         position: relative;
-        padding: 0;
+        padding: 20px;
         overflow: hidden;
 
         &-image {
             position: absolute;
             width: 40%;
             right: -20px;
-            top: -5px;
+            bottom: 0;
             opacity: 0.5;
         }
+
         &-text {
             position: relative;
-            padding: 10px;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
 
             & p {
                 margin: 0;
+            }
+
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
             }
 
             &-welcome {
@@ -222,6 +228,7 @@ section {
                 width: 25%;
                 opacity: 0.85;
                 right: -10px;
+                top: 0;
             }
 
             &-text {
@@ -269,6 +276,76 @@ section {
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 10%;
+        grid-template-areas:
+            "intro intro about about"
+            "intro intro about about"
+            "contact timezone timezone current"
+            "projects projects footer footer";
+
+        &__intro {
+            grid-area: intro;
+
+            &-image {
+                width: 50%;
+                top: 100px;
+                right: -20px;
+            }
+
+            &-text {
+                width: 70%;
+                justify-content: space-between;
+
+                &-wrapper {
+                    gap: 15px;
+                }
+            }
+        }
+
+        &__about {
+            grid-area: about;
+        }
+
+        &__contact {
+            grid-area: contact;
+        }
+
+        &__timezone {
+            grid-area: timezone;
+            gap: 50px;
+
+            &-info {
+                flex-direction: row;
+                & p {
+                    font-size: 2.2rem;
+                }
+            }
+            &-time {
+                font-size: 3rem;
+            }
+            &-loaction {
+                font-size: 3rem;
+            }
+        }
+
+        &__current {
+            grid-area: current;
+        }
+
+        &__footer {
+            grid-area: footer;
+        }
+
+        &__projects {
+            grid-area: projects;
         }
     }
 }
