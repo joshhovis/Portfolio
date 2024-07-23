@@ -71,7 +71,7 @@ const Home = () => {
                                 Joshua Hovis
                             </span>{" "}
                             , a software developer with a focus on the front end
-                            user experience.
+                            user experience and micro interactions.
                         </p>
                         <p className="home__intro-text-invite">
                             Feel free to reach out to me if you would like to

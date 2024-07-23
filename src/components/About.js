@@ -13,20 +13,20 @@ const About = () => {
                 My primary tools of choice include:
             </p>
             <ul className="about__tools">
-                <li className="about__tools-item">JavaScript</li>
+                <li className="about__tools-item">JavaScript / TypeScript</li>
                 <li className="about__tools-item">React</li>
                 <li className="about__tools-item">Angular</li>
-                <li className="about__tools-item">Astro</li>
                 <li className="about__tools-item">Nodejs</li>
+                <li className="about__tools-item">Python</li>
             </ul>
             <p className="about__passion">
-                Beyond coding, I have a passion for building things. Whether
-                it's crafting a new table or constructing an entire additional
-                room in a house, I thrive on creating from the ground up. I find
-                immense satisfaction in taking a plan and executing it to
-                completion. Building a website from scratch gives me the same
-                sense of accomplishment as constructing a piece of furniture
-                with my own hands.
+                Beyond building web applications, I have a passion for building
+                things in general. Whether it's creating something small like a
+                table or remodelling every room in a house, I thrive on creating
+                from the ground up. I find immense satisfaction in taking a plan
+                and executing it to completion. Building a website from scratch
+                gives me the same sense of accomplishment as constructing
+                something with my own hands.
             </p>
             <p className="about__goal">
                 Although I have my preferred tools, I always strive to choose
