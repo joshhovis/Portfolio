@@ -61,7 +61,7 @@ section {
             position: absolute;
             width: 40%;
             right: -20px;
-            bottom: 0;
+            bottom: -20px;
             opacity: 0.5;
         }
 
@@ -241,7 +241,18 @@ section {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
+    .home {
+        &__intro {
+            &-image {
+                width: 35%;
+                bottom: -100px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
     .home {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
