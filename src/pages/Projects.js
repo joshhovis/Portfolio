@@ -6,6 +6,7 @@ import timeDashboard from "../assets/time-dashboard.png";
 import bmi from "../assets/bmi.png";
 import newsForm from "../assets/news-form.png";
 import portfolio from "../assets/screenshot-portfolio.png";
+import gamehoc from "../assets/gamehoc.png";
 
 import { usePrimaryColor } from "../PrimaryColorContext";
 
@@ -93,6 +94,55 @@ const Projects = () => {
                         </Link>
                         <Link
                             to="https://github.com/joshhovis/Portfolio"
+                            className="projects__list-link"
+                        >
+                            <button className="projects__list-button">
+                                Source Code
+                            </button>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="projects__list-item">
+                    <img
+                        className="projects__list-img"
+                        src={gamehoc}
+                        alt="GameHOC home page"
+                    />
+                    <h3 className="projects__list-title">GameHOC</h3>
+                    <p className="projects__list-description">
+                        GameHOC is a web application that provides users with
+                        information about video games, including top-rated games
+                        and the latest releases. Users can create an account,
+                        log in, and manage their game collections. The
+                        application uses data from the RAWG Video Games Database
+                        API to fetch game details and ratings. The project
+                        demonstrates user authentication, session management,
+                        and data fetching using modern web technologies.
+                    </p>
+                    <div className="projects__list-tools">
+                        <h4 className="projects__list-tools-item">NodeJS</h4>
+                        <h4 className="projects__list-tools-item">ExpressJS</h4>
+                        <h4 className="projects__list-tools-item">EJS</h4>
+                        <h4 className="projects__list-tools-item">MongoDB</h4>
+                        <h4 className="projects__list-tools-item">Mongoose</h4>
+                        <h4 className="projects__list-tools-item">bcrypt</h4>
+                        <h4 className="projects__list-tools-item">
+                            express-session
+                        </h4>
+                        <h4 className="projects__list-tools-item">API</h4>
+                    </div>
+                    <div className="projects__list-link-row">
+                        <Link
+                            to="https://gamehoc.vercel.app/"
+                            className="projects__list-link"
+                        >
+                            <button className="projects__list-button">
+                                Live Site
+                            </button>
+                        </Link>
+                        <Link
+                            to="https://github.com/joshhovis/GameHOC"
                             className="projects__list-link"
                         >
                             <button className="projects__list-button">
