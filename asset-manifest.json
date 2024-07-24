@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a3312e3d.css",
-    "main.js": "/Portfolio/static/js/main.31c08676.js",
-    "static/js/453.998496b1.chunk.js": "/Portfolio/static/js/453.998496b1.chunk.js",
-    "static/media/gamehoc.png": "/Portfolio/static/media/gamehoc.178a04e7c1dcda92d973.png",
-    "static/media/bmi.png": "/Portfolio/static/media/bmi.b1c86e74f4c03b07e45b.png",
-    "static/media/screenshot-portfolio.png": "/Portfolio/static/media/screenshot-portfolio.be4845a7b50f859fc960.png",
-    "static/media/LLD.webp": "/Portfolio/static/media/LLD.a211ce1ee091b6f11959.webp",
-    "static/media/cartoon-profile.png": "/Portfolio/static/media/cartoon-profile.952945caa0fc636f5d63.png",
-    "static/media/news-form.png": "/Portfolio/static/media/news-form.3799b343134770549e17.png",
-    "static/media/time-dashboard.png": "/Portfolio/static/media/time-dashboard.b18ac50b03e4c5fd7278.png",
-    "static/media/topography.svg": "/Portfolio/static/media/topography.47a1e84dd1c61a223553.svg",
-    "index.html": "/Portfolio/index.html",
-    "main.a3312e3d.css.map": "/Portfolio/static/css/main.a3312e3d.css.map",
-    "main.31c08676.js.map": "/Portfolio/static/js/main.31c08676.js.map",
-    "453.998496b1.chunk.js.map": "/Portfolio/static/js/453.998496b1.chunk.js.map"
+    "main.css": "/static/css/main.e7fa4117.css",
+    "main.js": "/static/js/main.4f45df62.js",
+    "static/js/453.998496b1.chunk.js": "/static/js/453.998496b1.chunk.js",
+    "static/media/gamehoc.png": "/static/media/gamehoc.178a04e7c1dcda92d973.png",
+    "static/media/bmi.png": "/static/media/bmi.b1c86e74f4c03b07e45b.png",
+    "static/media/screenshot-portfolio.png": "/static/media/screenshot-portfolio.be4845a7b50f859fc960.png",
+    "static/media/LLD.webp": "/static/media/LLD.a211ce1ee091b6f11959.webp",
+    "static/media/cartoon-profile.png": "/static/media/cartoon-profile.952945caa0fc636f5d63.png",
+    "static/media/news-form.png": "/static/media/news-form.3799b343134770549e17.png",
+    "static/media/time-dashboard.png": "/static/media/time-dashboard.b18ac50b03e4c5fd7278.png",
+    "static/media/topography.svg": "/static/media/topography.47a1e84dd1c61a223553.svg",
+    "index.html": "/index.html",
+    "main.e7fa4117.css.map": "/static/css/main.e7fa4117.css.map",
+    "main.4f45df62.js.map": "/static/js/main.4f45df62.js.map",
+    "453.998496b1.chunk.js.map": "/static/js/453.998496b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3312e3d.css",
-    "static/js/main.31c08676.js"
+    "static/css/main.e7fa4117.css",
+    "static/js/main.4f45df62.js"
   ]
 }
