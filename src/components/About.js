@@ -7,7 +7,7 @@ const About = () => {
             <h1 className="about__title">About me</h1>
             <p className="about__description">
                 Hi, I'm Joshua, a full-stack software developer from the United
-                States.
+                States with 3 years of experience.
             </p>
             <p className="about__tools-title">
                 My primary tools of choice include:
