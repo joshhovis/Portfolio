@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.e7fa4117.css",
-    "main.js": "/static/js/main.58d64eee.js",
+    "main.js": "/static/js/main.52610291.js",
     "static/js/453.998496b1.chunk.js": "/static/js/453.998496b1.chunk.js",
+    "static/media/jmdb.png": "/static/media/jmdb.1fc8780315afa0dabcf8.png",
     "static/media/gamehoc.png": "/static/media/gamehoc.178a04e7c1dcda92d973.png",
     "static/media/bmi.png": "/static/media/bmi.b1c86e74f4c03b07e45b.png",
     "static/media/screenshot-portfolio.png": "/static/media/screenshot-portfolio.be4845a7b50f859fc960.png",
@@ -11,13 +12,14 @@
     "static/media/news-form.png": "/static/media/news-form.3799b343134770549e17.png",
     "static/media/time-dashboard.png": "/static/media/time-dashboard.b18ac50b03e4c5fd7278.png",
     "static/media/topography.svg": "/static/media/topography.47a1e84dd1c61a223553.svg",
+    "static/media/tip-calculator.png": "/static/media/tip-calculator.1fe8f4e42093e865f0af.png",
     "index.html": "/index.html",
     "main.e7fa4117.css.map": "/static/css/main.e7fa4117.css.map",
-    "main.58d64eee.js.map": "/static/js/main.58d64eee.js.map",
+    "main.52610291.js.map": "/static/js/main.52610291.js.map",
     "453.998496b1.chunk.js.map": "/static/js/453.998496b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7fa4117.css",
-    "static/js/main.58d64eee.js"
+    "static/js/main.52610291.js"
   ]
 }
